@@ -14,4 +14,6 @@ Two folders are created in this challenge named as Leaflet-Part-1 and Leaflet-Pa
 ### Leaflet-Part-1: Earthquake data 
 1. GeoJson earthquake data provided from following website: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
 
-2. 
+2. Past 30 days and all earthquakes data are chosen to be used for API URL call
+
+3. 
