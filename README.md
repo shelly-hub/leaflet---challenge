@@ -42,6 +42,9 @@ Two folders are created in this challenge named as Leaflet-Part-1 and Leaflet-Pa
            
    3. Call out tectonic plates data using "L.geoJson" method
 
+### Output Visualisations 
+ - Top right hand corner of the map has a layer control function which can click and view either or all combinations of street, topographic, earthquake or tectonic plates layer.
+
  ### Libraries used in Javascript
   - Leaflet.js
   - D3.js
