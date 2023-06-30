@@ -51,9 +51,9 @@ Two folders are created in this challenge named as Leaflet-Part-1 and Leaflet-Pa
 
 display.(N.D). MDN web docs. Accessed on: 29/06/2023, from<https://developer.mozilla.org/en-US/docs/Web/CSS/display>
 
-Using GeoJson with Leaflet - pointToLayer(). Leaflet. Accessed on: 29/06/2023, from<https://leafletjs.com/examples/geojson/>
+Using GeoJson with Leaflet - pointToLayer(2010-2023). Leaflet. Accessed on: 29/06/2023, from<https://leafletjs.com/examples/geojson/>
 
-HTML Color Picker.(2023).W3 Schools. Accessed on: 29/06/2023, from<https://www.w3schools.com/colors/colors_picker.asp>
+HTML Color Picker.(1999-2023).W3 Schools. Accessed on: 29/06/2023, from<https://www.w3schools.com/colors/colors_picker.asp>
 
 Earthquakes on Leaflet.(10/10/2022).pbogden. Accessed on: 29/06/2023, from< https://observablehq.com/@pbogden/earthquakes-on-leaflet>
 
