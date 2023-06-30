@@ -34,10 +34,12 @@ Two folders are created in this challenge named as Leaflet-Part-1 and Leaflet-Pa
  ### Leaflet-Part-2: Earthquake + Tectonic plates
  1. Data on tectonic plates can be found from following website:
    https://github.com/fraxen/tectonicplates
+
  2. Within the Github website:
      -  Go to GeoJson folder
      -  Select any of the json files (boundaries.json is used in this challenge)
      -  Click "Raw" button which direct to raw file, and copy the URL
+       
   3. Call out tectonic plates data using "L.geoJson" method
 
  ### Libraries used in Javascript
