@@ -1,8 +1,11 @@
 // URL for 30 days all earthquakes
 let url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson";
 
-// Query data
+// URL for tectonic plates
+let url2 = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
 
+
+// Query earthquake data
 d3.json(url).then(function(data){
     createFeature(data.features)
 });
@@ -11,6 +14,7 @@ d3.json(url).then(function(data){
 
 function createFeature(earthquakedata){
 
+    // Create circle marker points
     function pointToLayer(feature, latlng){
 
         let lmarkers = L.latLng([feature.geometry.coordinates[1], feature.geometry.coordinates[0]]);
@@ -36,15 +40,24 @@ function createFeature(earthquakedata){
                 };
 
         return L.circleMarker(lmarkers, geomarkerstyle);
-        // }
     }
 
-    let earthquakes = L.geoJson(earthquakedata, {
+        let earthquakes = L.geoJson(earthquakedata, {
         pointToLayer: pointToLayer}).
         bindPopup(function(layer){
             return "<h2>" + layer.feature.properties.place + "</h2><hr><h3> Magnitude: " + layer.feature.properties.mag + "<br><br> Depth: " + layer.feature.geometry.coordinates[2] + "</h3>"});
-               
-    createMap(earthquakes);
+        
+        createMap(earthquakes);
+
+        // Create tectonic plates
+        d3.json(url2).then(function(platedata){
+
+            let tectonics = L.geoJson(platedata,{
+                color: "yellow",
+                weight: 2
+            });
+            tectonics.addTo(myMap);
+        });
 };
 
     // ----------------------------------------------------------------------
