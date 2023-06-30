@@ -8,4 +8,10 @@ This project utilises earthquake data provided by United States Geological Surve
 
 Two folders are created in this challenge named as Leaflet-Part-1 and Leaflet-Part-2.
  - Leaflet-Part-1 visualises just earthquake data
- - Leaflet-Part-2 visualises earthquake data points with its relative location on tectonic plates
+ - Leaflet-Part-2 visualises earthquake data points with tectonic plates boundaries
+
+## Project Method
+### Leaflet-Part-1: Earthquake data 
+1. GeoJson earthquake data provided from following website: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
+
+2. 
